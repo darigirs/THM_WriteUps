@@ -68,6 +68,7 @@ Now running snort in IPS mode...
 
 
 And after a minute..
-![[Pasted image 20250415012847.png]]
+![](Write%20Ups/pics/Pasted%20image%2020250415022203.png)
 
 Flag: *THM{0ead8c494861079b1b74ec2380d2cd24}*
+
