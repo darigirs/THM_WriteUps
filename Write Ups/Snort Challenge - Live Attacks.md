@@ -1,17 +1,23 @@
 # Scenario 1 | Brute-Force
 
 Lets start with sniffing the traffic.
-![[Pasted image 20250415002939.png]]
+
+
+![](pics/Pasted%20image%2020250415002939.png)
 
 With closer look we can see some SSH traffic (using HEX and multiple connections to server SSH port)
-![[Pasted image 20250415002833.png]]
+
+
+![](pics/Pasted%20image%2020250415002833.png)
+
 
 Lets investigate SSH incoming traffic more. Add rule
 `alert tcp any any -> any 22 (msg:"Possible SSH brute"; sid:1000001; rev:1;)`
 
 to local.rules
-![[Pasted image 20250415003544.png]]
-![[Pasted image 20250415003518.png]]
+
+![](pics/Pasted%20image%2020250415003544.png)
+![](pics/Pasted%20image%2020250415003518.png)
 
 When we run it, we have some alerts to investigate
 ![[Pasted image 20250415004005.png]]
