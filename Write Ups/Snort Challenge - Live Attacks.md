@@ -72,3 +72,4 @@ And after a minute..
 
 Flag: *THM{0ead8c494861079b1b74ec2380d2cd24}*
 
+![](pics/Pasted%20image%2020250415022954.png)
