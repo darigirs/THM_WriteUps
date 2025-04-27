@@ -2,7 +2,7 @@
 
 The case was assigned to you. Inspect the provided **directory-curiosity.pcap** located in `~/Desktop/exercise-files` and retrieve the artefacts to confirm that this alert is a true positive.
 
-**Your tools:** TShark, [VirusTotal](https://www.virustotal.com/).  
+**Your tools:** TShark, VirusTotal.  
 
 Answer the questions below
 
