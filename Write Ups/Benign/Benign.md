@@ -111,7 +111,7 @@ First, I thought tha sample activity will be somewhere in logs. I tried searchin
 
 Other IOC that we have is the URL - hxxps[://]controlc[.]com/e4d11035. Looking into it, it seems like just a copy-pasting site for sharing. I followed the URL and found the answer.
 
-*Answer: THM{KJ&*H^B0}*
+*Answer: THM{KJ&\*H^B0}*
 
 ### Q10: What is the URL that the infected host connected to?
 
