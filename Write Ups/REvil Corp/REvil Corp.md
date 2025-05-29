@@ -103,6 +103,6 @@ Let's check browser activity. Sort events by Last Visit date, so the most recent
 I looked up the hash of decryptor on Virus Total and found all names in tags
 
 
-![](../../Pasted%20image%2020250530012908.png)
+![](pics/Pasted%20image%2020250530012908.png)
 
 *Answer: REvil,Sodin,Sodinokibi*
