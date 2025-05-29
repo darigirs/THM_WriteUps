@@ -47,33 +47,62 @@
 *Answer: .t48s39la*
 ### Q8: What is the number of files that got renamed and changed to that extension?
 
+![](pics/Pasted%20image%2020250530003350.png)
 
-*Answer:*
+I searched for every file with .t48s39la extension presented in user system (c: drive) and i got 24 matches. But this answer was wrong. I was curious and used provided Tip, which led me to Timeline section, where I could search for extension in Summary of changes. The answer 48 seems right for THM, but for me it counts number of changes, not files (looking closely you can see duplicating MD5 in matched Summary).
+
+![](pics/Pasted%20image%2020250530003137.png)
+
+*Answer: ~~24~~ 48*
 ### Q9: What is the full path to the wallpaper that got changed by an attacker, including the image name?
 
+REvil Ransomware saves wallpaper as .bmp files in Temp folder. (https://www.secureworks.com/research/revil-sodinokibi-ransomware)
 
-*Answer:*
+We can find 2 .bmp files in Temp folder. And one of them created right after files' extensions were changed
+
+![](pics/Pasted%20image%2020250530010823.png)
+
+
+*Answer: C:\Users\John Coleman\AppData\Local\Temp\hk8.bmp*
 ### Q10: The attacker left a note for the user on the Desktop; provide the name of the note with the extension.
 
 
-*Answer:*
+![](pics/Pasted%20image%2020250530010952.png)
+
+*Answer: t48s39la-readme.txt*
 ### Q11: The attacker created a folder "Links for United States" under C:\Users\John Coleman\Favorites\ and left a file there. Provide the name of the file.
 
 
-*Answer:*
+![](pics/Pasted%20image%2020250530011334.png)
+
+*Answer: GobiernoUSA.gov.url.t48s39la*
 ### Q12: There is a hidden file that was created on the user's Desktop that has 0 bytes. Provide the name of the hidden file.
 
+I filtered out only 0 bytes files on user's desktop
 
-*Answer:*
+![](pics/Pasted%20image%2020250530011446.png)
+
+*Answer: d60dff40.lock*
 ### Q13: The user downloaded a decryptor hoping to decrypt all the files, but he failed. Provide the MD5 hash of the decryptor file.
 
 
-*Answer:*
+![](pics/Pasted%20image%2020250530011643.png)
+
+![](pics/Pasted%20image%2020250530011928.png)
+
+*Answer: f617af8c0d276682fdf528bb3e72560b*
 ### Q14: In the ransomware note, the attacker provided a URL that is accessible through the normal browser in order to decrypt one of the encrypted files for free. The user attempted to visit it. Provide the full URL path.
 
+Let's check browser activity. Sort events by Last Visit date, so the most recent ones are on top (obviously we need to look at events, that happened after files were encrypted). At first we see a lot of bing/torproject requests, but one domain visited after encryption looks different.
 
-*Answer:*
+![](pics/Pasted%20image%2020250530012441.png)
+
+*Answer: hxxp[://]decryptor[.]top/644E7C8EFA02FBB7*
 ### Q15: What are some three names associated with the malware which infected this host? (enter the names in alphabetical order)
 
+I looked up the hash of decryptor on Virus Total and found all names in tags
 
-*Answer:*
+
+![](../../Pasted%20image%2020250530012908.png)
+
+*Answer: REvil,Sodin,Sodinokibi*
